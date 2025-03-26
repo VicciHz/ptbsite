@@ -7,7 +7,7 @@ import pontus from "/assets/pontus.jpg";
 import frans from "/assets/frans.png";
 import oliver from "/assets/oliver.jpg";
 import emil from "/assets/emil.png";
-import yehor from "/assets/Fox.jpeg"; //CHANGE LATER !!!
+import yehor from "/assets/yehor.png"; //CHANGE LATER !!!
 
 const membersData = [
   {
@@ -49,7 +49,7 @@ const membersData = [
     name: "Yehor Nyzhnyk",
     role: "Drums",
     image: yehor,
-    age: "18",
+    age: "2007",
     bio: "Yehor is the band's lead drummer and the newest member. Little is known about him, like Emil. He joined the band in late 2024.",
   },
 ];

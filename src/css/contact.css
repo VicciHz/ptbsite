@@ -1,0 +1,81 @@
+.contact-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #2c091a, #ae2568);
+    transition: background 0.5s ease-in-out;
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/contact-bg.jpg") center/cover no-repeat;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-out;
+}
+
+.contact-section:hover::before {
+    opacity: 0.7;
+    transform: scale(1.03);
+}
+
+.contact-content {
+    position: relative;
+    color: white;
+    z-index: 1;
+    max-width: 700px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.contact-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    transition: text-shadow 0.5s ease, color 0.5s ease;
+}
+
+.contact-content p {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    transition: color 0.5s ease;
+}
+
+.contact-section:hover .contact-content h1,
+.contact-section:hover .contact-content p {
+    text-shadow: 
+      0 0 10px #7e0c52, 
+      0 0 20px #ae2568,  
+      0 0 30px #d63c82,  
+      0 0 40px #f08bb9;
+}
+
+.contact-content a {
+    color: #ff80bf;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.contact-content a:hover {
+    color: #ffaad4;
+    text-shadow: 0 0 10px #ff80bf;
+}
+
+.email {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffd1dc;
+    text-shadow: 0 0 10px #ff80bf;
+}

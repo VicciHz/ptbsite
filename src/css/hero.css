@@ -26,7 +26,7 @@
 }
 
 .hero-section:hover::before {
-  opacity: 0.85; /* Slightly more visibility */
+  opacity: 0.85;
   transform: scale(1.05);
 }
 
@@ -49,16 +49,16 @@
   font-size: 4rem;
   font-weight: 800;
   letter-spacing: 2px;
-  transition: color 0.5s ease, text-shadow 0.5s ease; /* Add text-shadow transition */
+  transition: color 0.5s ease, text-shadow 0.5s ease;
 }
 
 .hero-section:hover .hero-content h1, .hero-content p{
   color: #ffffff;
   text-shadow: 
-    0 0 20px #600f34,  /* Darker inner glow */
-    0 0 40px #ae2568,  /* Medium glow */
-    0 0 50px #d63c82,  /* Lighter glow */
-    0 0 60px #f08bb9;  /* Lightest outer glow */
+    0 0 20px #600f34,
+    0 0 40px #ae2568, 
+    0 0 50px #d63c82, 
+    0 0 60px #f08bb9;  
 }
 
 
@@ -67,9 +67,9 @@
   max-width: 600px;
   margin: 20px auto;
   opacity: 0.9;
-  transition: color 0.5s ease; /* Smooth color transition */
+  transition: color 0.5s ease; 
 }
 
 .hero-section:hover .hero-content p {
-  color: #dcdcdc; /* Lighter gray for the paragraph */
+  color: #dcdcdc; 
 }
