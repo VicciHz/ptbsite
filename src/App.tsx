@@ -6,6 +6,7 @@ import Hero from "./pages/Hero";
 import Members from "./pages/Members";
 import Footer from "./tabs/Footer";
 import Contact from "./pages/contact";
+import AboutUs from "./pages/about";
 //import Bio from "./pages/Bio";
 
 import "./css/index.css";
@@ -15,6 +16,7 @@ const App: React.FC = () => {
     <div className="app-container">
       <TopBar />
       <Hero />
+      <AboutUs />
       <Members />
       <Music />
       <Contact />

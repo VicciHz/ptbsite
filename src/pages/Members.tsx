@@ -43,7 +43,7 @@ const membersData = [
     role: "Keyboard, Backing Vocalist",
     image: emil,
     age: "2010",
-    bio: "Emil is the keyboardist and one of the backing vocalists. He is the band's 'quiet kid,' making him the most mysterious person in the band. He joined the band in mid 2024.",
+    bio: "Emil is the keyboardist and one of the backing vocalists. He is the band's 'quiet kid', making him the most mysterious person in the band. He joined the band in mid 2024.",
   },
   {
     name: "Yehor Nyzhnyk",

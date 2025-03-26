@@ -1,22 +1,17 @@
 body {
-  background: linear-gradient(to top, #2c2c2c, #000000); /* Keeps the darker gradient for a sleek feel */
+  background: linear-gradient(to top, #2c2c2c, #000000);
 }
 
 .music-section {
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(to top, #000000, #2c2c2c); /* Matching the body gradient */
+  background: linear-gradient(to top, #000000, #2c2c2c);
   overflow: hidden;
-  transition: background 0.5s ease-in-out;
-}
-
-.music-section:hover {
-  background: linear-gradient(to bottom, #2c2c2c, #000000); /* Reversed gradient on hover */
+  padding: 60px;
 }
 
 .music-section::before {
@@ -44,39 +39,57 @@ body {
 
 .music-content {
   position: relative;
-  text-align: center;
-  color: white;
   z-index: 1;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  width: 80%;
+  max-width: 1200px;
 }
 
-.music-section:hover .music-content {
-  opacity: 1;
-  transform: translateY(0);
+.music-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
 }
 
-.music-content h2 {
-  font-size: 4rem;
+.music-text {
+  color: white;
+}
+
+.music-text h2 {
+  font-size: 3rem;
   font-weight: 800;
-  letter-spacing: 2px;
-  transition: color 0.5s ease, text-shadow 0.5s ease;
+  text-shadow: 0 0 20px #ae2568;
 }
 
-.music-section:hover .music-content h2 {
-  color: #ffffff;
-  text-shadow: 0 0 50px #ae2568; /* Soft glowing text */
-}
-
-.music-content p {
-  font-size: 1.5rem;
-  max-width: 600px;
-  margin: 20px auto;
+.music-text p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  max-width: 500px;
   opacity: 0.9;
-  transition: color 0.5s ease;
 }
 
-.music-section:hover .music-content p {
-  color: #dcdcdc; /* Light text color for paragraph */
+.music-players {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.spotify-embed {
+  border-radius: 12px;
+  width: 100%;
+  height: 352px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .music-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .music-players {
+    width: 100%;
+    max-width: none;
+  }
 }
