@@ -1,0 +1,147 @@
+
+  /* Bio container styling */
+  .bio-container {
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    max-width: 900px;
+    width: 100%;
+    margin: 20px;
+    color: #f1f1f1;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.5s ease-in-out;
+  }
+  
+  .bio-container:hover {
+    background-color: #333;
+  }
+  
+  /* Hero section-like background animation */
+  .bio-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-out;
+  }
+  
+  .bio-container:hover::before {
+    opacity: 0.85;
+    transform: scale(1.05);
+  }
+  
+  /* Title styling */
+  .bio-title {
+    font-size: 36px;
+    color: #ffcc00; /* Yellow for glam metal vibe */
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+  }
+  
+  /* Hover effect for title */
+  .bio-container:hover .bio-title {
+    color: #ffffff;
+    text-shadow: 
+      0 0 20px #600f34,
+      0 0 40px #ae2568,
+      0 0 50px #d63c82,
+      0 0 60px #f08bb9;
+  }
+  
+  /* Section titles */
+  .bio-section h2 {
+    font-size: 28px;
+    color: #ff6f61; /* Fun, lively orange-red */
+    text-transform: uppercase;
+    border-bottom: 3px solid #ff6f61;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Paragraph text */
+  .bio-section p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    opacity: 0.9;
+    transition: color 0.5s ease; /* Smooth color transition */
+  }
+  
+  .bio-container:hover .bio-section p {
+    color: #dcdcdc; /* Lighter gray for the paragraph */
+  }
+  
+  /* Links styling */
+  .bio-section a {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .bio-section a:hover {
+    color: #ff6f61;
+    text-decoration: underline;
+  }
+  
+  /* List styling for band members */
+  .band-members {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 18px;
+  }
+  
+  .band-members li {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .band-members li::before {
+    content: "🎸"; /* Fun rock emoji to represent band members */
+    margin-right: 10px;
+    color: #ffcc00;
+  }
+  
+  /* Hover effect for band members section */
+  .bio-container:hover .band-members li {
+    color: #ff6f61;
+    text-shadow: 
+      0 0 10px #600f34,
+      0 0 20px #ae2568;
+  }
+  
+  /* Fun hover effect for sections */
+  .bio-section:hover {
+    background-color: #333;
+    transition: background-color 0.3s ease-in-out;
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Footer styling for contact */
+  .bio-footer {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .bio-footer a {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .bio-footer a:hover {
+    text-decoration: underline;
+  }
+  

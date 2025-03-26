@@ -1,0 +1,82 @@
+body {
+  background: linear-gradient(to top, #2c2c2c, #000000); /* Keeps the darker gradient for a sleek feel */
+}
+
+.music-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(to top, #000000, #2c2c2c); /* Matching the body gradient */
+  overflow: hidden;
+  transition: background 0.5s ease-in-out;
+}
+
+.music-section:hover {
+  background: linear-gradient(to bottom, #2c2c2c, #000000); /* Reversed gradient on hover */
+}
+
+.music-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/Vicci.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out, transform 0.8s ease-out, filter 0.5s ease-in-out;
+  filter: brightness(70%);
+  z-index: 0;
+}
+
+.music-section:hover::before {
+  opacity: 0.85;
+  transform: scale(1.05);
+  filter: brightness(80%);
+}
+
+.music-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.music-section:hover .music-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.music-content h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+.music-section:hover .music-content h2 {
+  color: #ffffff;
+  text-shadow: 0 0 50px #ae2568; /* Soft glowing text */
+}
+
+.music-content p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 20px auto;
+  opacity: 0.9;
+  transition: color 0.5s ease;
+}
+
+.music-section:hover .music-content p {
+  color: #dcdcdc; /* Light text color for paragraph */
+}
