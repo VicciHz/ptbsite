@@ -7,7 +7,7 @@ import pontus from "/assets/pontus.jpg";
 import frans from "/assets/frans.png";
 import oliver from "/assets/oliver.jpg";
 import emil from "/assets/emil.png";
-import yehor from "/assets/yehor.png"; //CHANGE LATER !!!
+import yehor from "/assets/yehor.png";
 
 const membersData = [
   {
