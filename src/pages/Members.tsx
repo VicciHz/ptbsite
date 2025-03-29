@@ -5,7 +5,7 @@ import "../css/members.css";
 import vicci from "/assets/vicci.jpg";
 import pontus from "/assets/pontus.jpg";
 import frans from "/assets/frans.png";
-import oliver from "/assets/oliver.jpg";
+import oliver from "/assets/oliver.png";
 import emil from "/assets/emil.png";
 import yehor from "/assets/yehor.png";
 
@@ -15,7 +15,7 @@ const membersData = [
     role: "Lead Vocals, Guitarist",
     image: vicci,
     age: "2006",
-    bio: "Victor is the Lead Vocalist and one of the guitarists. He is also the band's primary songwriter and producer and has a solo career too. Victor joined the band in mid 2021.",
+    bio: "Victor is the Lead Vocalist and one of the guitarists. He is also the band's primary songwriter and producer. Victor joined the band in mid 2021 and recently started a solo career too..",
   },
   {
     name: "Pontus Holmqvist",
