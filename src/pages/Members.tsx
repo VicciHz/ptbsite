@@ -32,7 +32,7 @@ const membersData = [
     bio: "Frans is one of the guitarists. He, together with Pontus, founded the band in 2018 and is the shortest member. He has contributed to writing the song *Swedish Rock*.",
   },
   {
-    name: "Oliver Kristlund",
+    name: "Oliver Kirslund",
     role: "Guitar, Backing Vocalist",
     image: oliver,
     age: "2010",
@@ -87,12 +87,12 @@ const MembersHead: React.FC = () => {
               {hoveredMember === index && (
                 <motion.div
                   className="member-bio"
-                  initial={{ opacity: 0, y: -20 }} // Start higher up
-                  animate={{ opacity: 1, y: 0 }} // Smooth drop
-                  exit={{ opacity: 0, y: -20 }} // Fade out upwards
+                  initial={{ opacity: 0, y: -20 }} 
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }} 
                   transition={{
                     duration: 0.8,
-                    ease: [0.16, 1, 0.3, 1], // Smooth gravity-like easing
+                    ease: [0.16, 1, 0.3, 1],
                   }}
                 >
                   <p>{member.bio}</p>
